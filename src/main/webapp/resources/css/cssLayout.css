@@ -1,0 +1,39 @@
+
+#top {
+    position: relative;
+    background-color: #CDC5BF;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+#login-dialog{
+    width: 290px;
+    margin: auto;
+    margin-top: 150px;
+    
+}
+.grid-login{
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+   
+}
+
+
+
+
+
+
+
+#conteudo{
+    padding: 0px 8px;
+}
+.footer{
+    padding: 0px 8px;
+    margin-bottom: 10px;
+    
+}
+
+
