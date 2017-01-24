@@ -7,37 +7,45 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 	
 	
-	<h:head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title><ui:insert name="titulo"> Sistema de Pedidos de Venda</ui:insert> </title>
-	<h:outputStylesheet name="./css/default.css"/>
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title><ui:insert name="titulo"> Sistema de Pedidos de Venda</ui:insert> </title>
+        <h:outputStylesheet name="./css/default.css"/>
         <h:outputStylesheet name="./css/cssLayout.css"/>
-        
-	</h:head>
-	
-	
-	<h:body>
-	
-			<div id="top">
-				<h:link>
-					<h:graphicImage library="images" name="algo.png" width="80" height="32" />
-				</h:link>	
-			</div>
-            
-                     
-		
-		
-	</h:body>
-    
-    <div id="conteudo">
-        <ui:insert name="corpo"/>
-    </div>
-    
-    <p:separator style="margin-top: 20px"/>
-    
-    <footer>
-        Curso Online Sistemas Comerciais
-        <a href="http://bit.ly/" target="_blank">www.informactec.com</a>
-    </footer>
-	
-	</html>
+
+    </h:head>
+
+
+    <h:body>
+        <p:ajaxStatus styleClass="ajax-status">
+            <f:facet name="start">
+                <h:graphicImage library="images" name="loading.gif"/>
+            </f:facet> 
+            <f:facet name="complete">
+                <h:outputText value=""/>
+            </f:facet>
+        </p:ajaxStatus>
+
+        <div id="top">
+            <h:link>
+                <h:graphicImage library="images" name="algo.png" width="80" height="32" />
+            </h:link>	
+        </div>
+        <div id="conteudo">
+            <ui:insert name="corpo"/>
+        </div>
+
+        <p:separator style="margin-top: 20px"/>
+
+        <footer>
+            Curso Online Sistemas Comerciais
+            <a href="http://bit.ly/" target="_blank">www.informactec.com</a>
+        </footer>     
+
+
+
+    </h:body>
+
+
+
+</html>
